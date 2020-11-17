@@ -1,3 +1,53 @@
 #mobile {
     display: none;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*HEADER*/
+
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 4rem;
+    background-color: white;
+    align-items: center;
+    top: 0;
+    display: flex;
+}
+
+div.logo {
+    display: flex;
+    margin: 0;
+    height: 4rem;
+    padding-left: 1.5rem;
+    height: 2rem;
+}
+
+.logo img {
+    height: 32px;
+}
+h1 {
+    margin: auto;
+}
+
+
+nav#nav-desktop {
+    text-align: right;
+    flex-grow: 1;
+}
+
+nav span {
+    display: inline-block;
+    padding: 20px 10px;
+}

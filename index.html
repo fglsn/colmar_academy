@@ -5,38 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colmar Academy</title>
     <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
 </head>
 <body>
-    <header>
-        <div class="navigation">
-            <div class="desktop logo">
+    <header class="flex-container">
+            <div class="logo">
                 <img src="./images/ic-logo.svg">
-                <h1>COLMAR<span>ACADEMY</span></h1>
+                <h1>COLMAR<span id="light">ACADEMY</span></h1>
             </div>
-            <nav class="desktop">
-                <ul>
-                    <li><a href="#">On campus</a></li>
-                    <li><a href="#">Online</a></li>
-                    <li><a href="#">For companies</a></li>
-                    <li><a href="#">Sign in</a></li>
-                </ul>
+            <nav id="nav-desktop">
+                    <span href="#">On campus</span>
+                    <span href="#">Online</span>
+                    <span href="#">For companies</span>
+                    <span href="#">Sign in</span>
             </nav>
             <nav id="mobile">
-                <ul>
                     <li><a href="#"><img src="./images/ic-logo.svg"></a></li>
                     <li><a href="#"><img src="./images/ic-on-campus.svg"></a></li>
                     <li><a href="#"><img src="./images/ic-online.svg"></a></li>
                     <li><a href="#"><img src="./images/ic-login.svg"></a></li>
-                </ul>
+
             </nav>
-        </div>
     </header>
 
     <!--Main content-->
     <div class="main content">
 
         <!--First section (banner)-->
-        <div class="first-section">
+        <div class="first-section flex-container">
             <img class="banner" src="images/banner.jpg">
             <div class="banner-text">
                 <h2>Learn something new everyday</h2>
@@ -47,7 +44,7 @@
 
         <!--Second section (info)-->
         <div class="second-section">
-            <div class="left">
+            <div class="left flex-container">
                 <div class="info-image">
                     <img src="images/information-main.jpg">
                 </div>
@@ -57,7 +54,7 @@
                     <p id="info-name">Emanuel, Sr. Strategist at Hiring.com</p>
                 </div>
             </div>
-            <div class="right">
+            <div class="right flex-container">
                 <div class="info-blocks">
                     <div class="container-img">
                         <img id="desktop" src="./images/information-orientation.jpg">
@@ -99,7 +96,7 @@
             <div class="heading">
                 <h3>Start learning</h3>
             </div>
-            <div class="courses">
+            <div class="courses flex-container">
                 <div class="course">
                     <div class="course-img">
                         <img src="./images/course-software.jpg">
@@ -168,7 +165,7 @@
             <div class="heading">
                 <h3>Thesis exhibit</h3>
             </div>
-            <div class="left">
+            <div class="left flex-container">
                 <div class="video">
                     <video autoplay muted loop>
                         <source src="./videos/thesis.mp4" type="video/mp4">
@@ -180,7 +177,7 @@
                     <p class="quote">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit."</p>
                 </div>
             </div>
-            <div class="right">
+            <div class="right flex-container">
                 <div class="info-blocks">
                     <div class="container-img">
                         <img id="desktop" src="./images/thesis-fisma.jpg">
