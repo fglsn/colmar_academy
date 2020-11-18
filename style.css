@@ -1,7 +1,10 @@
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #444444;
+    color: #4d4d4d;
     text-align: left;
     margin: 0;
 }
@@ -11,13 +14,35 @@ h1 {
     font-size: 2rem;
 }
 
+h2 {
+    margin: 0;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 #mobile {
     display: none;
 }
 
+video {
+    width: 100px;
+}
 /*header*/
 header {
     width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 100;
 }
 
 div.nav-content {
@@ -30,7 +55,7 @@ div.nav-content {
 
 span#light {
     font-weight: 300;
-    color: #777777;
+    color: #b3b3b3;
 }
 
 img#logoimg {
@@ -45,4 +70,37 @@ span.navspan {
 div.nav-desktop {
     flex-grow: 1;
     text-align: right;
+}
+
+/*main*/
+
+div.main {
+    margin-top: 4rem;
+    position: relative;
+    width: 100%;
+}
+
+div.first-section {
+    display: flex;
+    background-color: #e6e6e6
+}
+
+.banner {
+    padding: 2rem 1.5rem;
+    width: 60%;
+}
+
+div.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 5rem;
+}
+
+.button {
+    padding: 0.5rem 0;
+    background-color: #4d4d4d;
+    color: white;
+    text-align: center;
 }
