@@ -194,9 +194,56 @@ h3.info-text {
     margin-bottom: 1.5rem;
 }
 
+#text {
+    margin: 0.5rem 0;
+}
+
 /*third section*/
 
 .third-section {
-    background-color: ;
+    background-color: #f1f0f0;
+    padding: 2rem 0 2rem;
 }
 
+.heading {
+    text-align: center;
+    margin: 0;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4rem;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: white;
+    margin: 2rem 1rem;
+}
+
+div.course {
+    box-sizing: border-box;
+}
+
+.course-img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+#marged {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+#description {
+    margin: 0;
+}
