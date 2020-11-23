@@ -8,20 +8,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">   
 </head>
+
 <body>
+
+    <!-- School Header-->
+
     <header>
         <div class="nav-content">
             <div class="logo">
-                <img id="logoimg" src="./images/ic-logo.svg">
+                <img id="logoimg" src="./images/ic-logo.svg" alt="School logo">
             </div>
             <div class="logo">
                 <h1>COLMAR<span id="light">ACADEMY</span></h1>
             </div>
             <div class="nav-desktop">
-                    <span class="navspan" href="#">On campus</span>
-                    <span class="navspan" href="#">Online</span>
-                    <span class="navspan" href="#">For companies</span>
-                    <span href="#">Sign in</span>
+                    <a class="navspan" href="#">On campus</a>
+                    <a class="navspan" href="#">Online</a>
+                    <a class="navspan" href="#">For companies</a>
+                    <a href="#">Sign in</a>
             </div>
             <div class="nav-desktop" id="mobile">
                     <li><a href="#"><img src="./images/ic-logo.svg"></a></li>
@@ -33,7 +37,7 @@
     </header>
 
     <!--Main content-->
-    <div class="main">
+    <main>
 
         <!--First section (banner)-->
         <div class="first-section flex-container">
@@ -57,7 +61,7 @@
                     <p id="info-name">Emanuel, Sr. Strategist at Hiring.com</p>
                 </div>
             </div>
-            <div class="right flex-container">
+            <div class="right">
                 <div class="info-blocks">
                     <div id="containerimg"> 
                         <img class="container-img" id="desktop" src="./images/information-orientation.jpg">
@@ -66,7 +70,7 @@
                     <div class="container-text">
                         <h4>Orientation date</h4>
                         <p id="text">Tue 10/11 & Wed 10/12: 8am - 3pm</p>
-                        <a href="#">Read more</a>
+                        <a id="readmore" href="#">Read more</a>
                     </div>   
                 </div>
                 <div class="info-blocks">
@@ -77,10 +81,10 @@
                     <div class="container-text">
                         <h4>Our campus</h4>
                         <p id="text">Find which campus is close by you</p>
-                        <a href="#">Read more</a>
+                        <a id="readmore" href="#">Read more</a>
                     </div>   
                 </div>
-                <div class="info-blocks" id="guest">
+                <div class="info-blocks grey">
                     <div id="containerimg">
                         <img class="container-img" id="desktop" src="./images/information-guest-lecture.jpg">
                         <img class="container-img" id="mobile" src="./images/information-guest-lecture-mobile.jpg">
@@ -88,7 +92,7 @@
                     <div class="container-text">
                         <h4>Our guest lecture</h4>
                         <p id="text">Join a keynote with Oliver Sack about music in medical treatment</p>
-                        <a href="#">Read more</a>
+                        <a id="readmore" href="#">Read more</a>
                     </div>   
                 </div>
             </div>
@@ -168,36 +172,38 @@
             <div class="heading">
                 <h3>Thesis exhibit</h3>
             </div>
-            <div class="left flex-container">
-                <div class="video">
-                    <video autoplay muted loop>
-                        <source src="./videos/thesis.mp4" type="video/mp4">
-                        Thesis video
-                    </video> 
-                </div>
-                <div>
-                    <h4>Reimagine urban</h4>
-                    <p class="quote">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit."</p>
-                </div>
-            </div>
-            <div class="right flex-container">
-                <div class="info-blocks">
-                    <div class="container-img">
-                        <img id="desktop" src="./images/thesis-fisma.jpg">
+            <div class="fourth-content">
+                <div class="left">
+                    <div class="video">
+                        <video autoplay muted loop>
+                            <source src="./videos/thesis.mp4" type="video/mp4">
+                            Thesis video
+                        </video> 
                     </div>
-                    <div class="container-text">
-                        <h4>Fisma: Design amd Prototype</h4>
-                        <p>Designer showcase of new prototype product</p>
-                    </div>   
-                </div>
-                <div class="info-blocks">
-                    <div class="container-img">
-                        <img id="desktop" src="./images/thesis-now-and-then.jpg">
+                    <div>
+                        <h4 id="videotext">Reimagine urban</h4>
+                        <p class="quote">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit."</p>
                     </div>
-                    <div class="container-text">
-                        <h4>Now and then</h4>
-                        <p>Research study about New York</p>
-                    </div>   
+                </div>
+                <div class="right noborder">
+                    <div class="info-blocks grey noborder">
+                        <div id="containerimg">
+                            <img class="container-img" id="desktop" src="./images/thesis-fisma.jpg">
+                        </div>
+                        <div class="container-text">
+                            <h4>Fisma: Design and Prototype</h4>
+                            <p>Designer showcase of new prototype product</p>
+                        </div>   
+                    </div>
+                    <div class="info-blocks noborder">
+                        <div id="containerimg">
+                            <img class="container-img" id="desktop" src="./images/thesis-now-and-then.jpg">
+                        </div>
+                        <div class="container-text">
+                            <h4>Now and then</h4>
+                            <p>Research study about New York</p>
+                        </div>   
+                    </div>
                 </div>
             </div>
         </div>
@@ -205,13 +211,13 @@
         <!--Footer-->
         <footer>
             <div class="rights">
-                <p>©2016 Colmar Academy. All rights reserved.</p>
+                <p>© 2016 Colmar Academy. All rights reserved.</p>
             </div>
-            <div id="terms">
-                <a href="#">Terms</a>
-                <a href="#">Privacy</a>
+            <div class="terms">
+                <a id="bottom" href="#">Terms</a>
+                <a id="bottom" href="#">Privacy</a>
             </div>
         </footer>
-    </div>
+    </main>
 </body>
 </html>

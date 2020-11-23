@@ -17,12 +17,13 @@ h1 {
 
 h2 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.75rem;
     line-height: 3rem;
 }
 
 h3 {
     font-size: 2rem;
+    margin: 32px 0 0 0;
 }
 
 h4 {
@@ -32,17 +33,14 @@ h4 {
 
 a {
     text-decoration: none;
-    color: rgb(68, 177, 245);
     font-weight: 300;
+    color: #4d4d4d;
 }
 
 #mobile {
     display: none;
 }
 
-video {
-    width: 100px;
-}
 /*header*/
 header {
     width: 100%;
@@ -52,7 +50,7 @@ header {
     z-index: 100;
 }
 
-div.nav-content {
+.nav-content {
     display: flex;
     flex: 1;
     align-items: center;
@@ -60,21 +58,26 @@ div.nav-content {
     padding: 0 1.5rem;
 }
 
-span#light {
+#light {
     font-weight: 300;
     color: #b3b3b3;
 }
 
-img#logoimg {
+#logoimg {
     height: 3rem;
     margin-top: 0.5rem;
 }
 
-span.navspan {
+.navspan {
     padding-right: 16px;
+    color: #4d4d4d;
 }
 
-div.nav-desktop {
+#navspan {
+    co
+}
+
+.nav-desktop {
     flex-grow: 1;
     text-align: right;
 }
@@ -119,15 +122,14 @@ div.main {
 .second-section {
     display: flex;
     justify-content: flex-start;  
+    flex-wrap: nowrap;
 }
 
 .left {
     display: flex;
     padding: 2rem 1.5rem;
     flex-direction: column;
-    align-content: flex-start;
     width: 60%;
-    flex: 1.5;
 }
 
 #infoimage {
@@ -144,20 +146,20 @@ div.main {
     display: flex;
     flex-direction: column;
     width: 40%;
-    justify-content: center;
     flex: 1;
     border-left: 0.5px solid #e6e6e6;
+    padding-top: 1rem;
 }
 
  .info-blocks {
     display: flex;
     flex-direction: row;
-    flex: 1;
-    border: 0.5px solid #e6e6e6;
+    border-bottom: 0.5px solid #e6e6e6;
+    padding: 1rem 2rem 1rem 0;
  }
 
  #containerimg{
-    width: 45%;
+    width: 35%;
     margin: auto;
  }
  .container-text {
@@ -166,7 +168,6 @@ div.main {
     flex-direction: column;
     justify-content: center;
     padding-left: 2rem;
-    padding-right: 5rem;
     align-items: left;
  }
 
@@ -180,7 +181,7 @@ div.main {
     margin: 0;
 }
 
-#guest {
+.grey {
     background-color: #e6e6e6;
 }
 
@@ -196,6 +197,10 @@ h3.info-text {
 
 #text {
     margin: 0.5rem 0;
+}
+
+#readmore {
+    color: rgb(74, 169, 247);
 }
 
 /*third section*/
@@ -246,4 +251,54 @@ div.course {
 
 #description {
     margin: 0;
+}
+
+/*fourth section*/
+
+video {
+    max-width: 100%;
+}
+
+#videotext {
+    margin-bottom: 8px;
+}
+
+.quote {
+    margin: 0;
+}
+
+.fourth-content {
+    display: flex;
+}
+
+.right.noborder {
+    padding-top: 2rem;
+}
+.noborder {
+    border: none;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    display: flex;
+    border-top: 0.5px solid #e6e6e6;
+    z-index: 100;
+    align-items: center;
+}
+
+.rights {
+    padding-left: 1.5rem;
+    font-size: 0.75rem;
+}
+.terms {
+    flex-grow: 1;
+    text-align: right;
+}
+
+#bottom {
+    font-size: 0.75rem;
+    color: #4d4d4d;
+    padding: 1rem;
 }
