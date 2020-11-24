@@ -62,6 +62,7 @@ header {
     top: 0;
     background-color: white;
     z-index: 100;
+    opacity: 90%;
 }
 
 .logo h1 {
@@ -116,6 +117,10 @@ main {
     width: 60%;
 }
 
+.banner img {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+
 .banner-text { 
     flex-direction: column;
     justify-content: center;
@@ -124,12 +129,14 @@ main {
 }
 
 .button {
-    padding: 0.5rem 0;
+    width: 50%;
+    padding: 1rem 0;
     background-color: #4d4d4d;
     color: white;
     text-align: center;
     font-weight: 400;
     transition: color 400ms;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
 }
 
 .button:hover {
@@ -152,6 +159,8 @@ main {
 
 .info-img {
     max-width: 100%;
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
 }
 
  .right {
@@ -168,7 +177,11 @@ main {
 
  .container-img {
     max-width: 100%;
-    padding-left: 1rem;
+    padding-left: 1rem; 
+}
+
+.containerimg img {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
 }
 
  #containerimg{
@@ -181,8 +194,9 @@ main {
     flex-direction: column;
     justify-content: center;
     padding-left: 2rem;
-
 }
+
+.info-img 
 
 .container-text h4{
     margin: 0;
@@ -234,6 +248,7 @@ h3.info-text {
     width: 30%;
     background-color: white;
     margin: 2rem 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
 }
 
 div.course {
@@ -262,6 +277,7 @@ div.course {
 
 video {
     max-width: 100%;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
 }
 
 #videotext {
@@ -309,6 +325,7 @@ footer {
     padding: 1rem;
 }
 
+
 @media only screen and (max-width: 600px) {
 
     /*hide*/
@@ -348,7 +365,6 @@ footer {
 
     .banner-text {
         padding: 2rem 1rem;
-        background-color: #eeeded;
     }
 
     .button {
@@ -403,6 +419,7 @@ footer {
         background-color: #e6e6e6;
         padding: 1rem;
         margin: 0 0 0.5rem 0;
+        box-shadow: 0 0rem 2px rgba(0,0,0,0.1);
     }
 
     .course-content {
