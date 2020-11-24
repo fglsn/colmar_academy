@@ -37,7 +37,11 @@ a {
     color: #4d4d4d;
 }
 
-#mobile {
+.nav-mobile {
+    display: none;
+}
+
+#mobile-img {
     display: none;
 }
 
@@ -73,10 +77,6 @@ header {
     color: #4d4d4d;
 }
 
-#navspan {
-    co
-}
-
 .nav-desktop {
     flex-grow: 1;
     text-align: right;
@@ -84,7 +84,7 @@ header {
 
 /*main*/
 
-div.main {
+main {
     margin-top: 4rem;
     position: relative;
     width: 100%;
@@ -302,3 +302,107 @@ footer {
     color: #4d4d4d;
     padding: 1rem;
 }
+
+@media only screen and (max-width: 600px) {
+    
+    .logo, .nav-desktop, .left, #desktop, .course-img, #text, #description{
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+    /* navigation mobile*/
+
+    .nav-mobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    img.nav-mobile {
+        display: inline-block;
+    }
+
+    /*first-section mobile*/
+
+    .first-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {
+        width: 100%;
+        padding: 0;
+    }
+
+    .banner-text {
+        padding: 2rem 1rem;
+        background-color: #eeeded;
+    }
+
+    .button {
+        background-color: #919191;
+        font-weight: bolder;
+    }
+
+    /*second-section*/
+
+    .right {
+        padding: 0;
+        padding-bottom: 1rem;
+    }
+
+    .info-blocks {
+        width: 100%;
+        margin: auto;
+        background-color: white;
+        flex-flow: column;
+        padding-top: 0;
+        border: none;
+        padding-right: 0;
+    }
+    
+    #containerimg {
+        display: flex;
+        width: auto;
+    }
+    
+
+    #mobile-img {
+        display: block;
+        box-sizing: border-box;
+        max-width: 100%;
+        padding: 16px;
+    }
+ 
+    /*third section*/
+
+    .third-section {
+        background-color: white;
+        border-top: 0.5px solid #e6e6e6;
+        border-bottom: 0.5px solid #e6e6e6;
+        padding-bottom: 1.5rem;
+    }
+
+    .courses {
+        flex-direction: column;
+        margin: 1rem 0 0 0;
+    }
+
+    .course {
+        width: 90%;
+        background-color: #e6e6e6;
+        padding: 1rem;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .course-content {
+        padding: 0;
+    }
+
+    #marged {
+        margin: auto;
+        font-size: 1.25rem;
+    }
